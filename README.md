@@ -41,68 +41,26 @@ No nível Novato, você criará a árvore binária que representa o **mapa da ma
 *   Estrutura imutável em tempo de execução.
 
 ---
+Exemplo de saída:
 
-## 🛡️ Nível Aventureiro: Organização de Pistas com Árvore de Busca
+EXPLORAÇÃO DA MANSÃO ASSOMBRADA
+Você começa no Hall de Entrada.
 
-No nível Aventureiro, você expandirá o jogo incluindo uma **árvore de busca (BST)** para armazenar pistas encontradas.
+Você está na sala: 🏰 Hall de Entrada
 
-🆕 **Diferença em relação ao Nível Novato:**
+Para onde deseja ir?
+  [e] Ir para a esquerda → Biblioteca
+  [d] Ir para a direita → Cozinha
+  [s] Sair da exploração
+Escolha: e
 
-*   Agora, ao visitar certos cômodos, o jogador encontrará pistas.
-*   Essas pistas são armazenadas ordenadamente em uma BST.
+Você está na sala: 🏰 Biblioteca
 
-⚙️ **Funcionalidades do Sistema:**
+Para onde deseja ir?
+  [e] Ir para a esquerda → Quarto Principal
+  [d] Ir para a direita → Jardim
+  [s] Sair da exploração
+Escolha: d
 
-*   Implementar inserção e busca de strings (pistas) na árvore de busca.
-*   Permitir que o jogador visualize todas as pistas em ordem alfabética.
-*   Adicionar novas pistas automaticamente ao visitar salas específicas.
-
-📥 **Entrada** e 📤 **Saída de Dados:**
-
-*   As pistas são cadastradas via `inserir()` ao serem encontradas.
-*   O programa pode listar todas as pistas com `emOrdem()`.
-
-**Simplificações para o Nível Intermediário:**
-
-*   Nenhuma remoção é necessária.
-*   Não é necessário balancear a árvore.
-*   As pistas são strings simples (nomes curtos).
-
----
-
-## 🏆 Nível Mestre: Suspeitos e Solução com Tabela Hash
-
-No nível Mestre, você implementará a **tabela hash** para vincular pistas a **suspeitos**. Agora o jogador pode consultar quem está associado a cada pista e deduzir o culpado com base nas evidências coletadas.
-
-🆕 **Diferença em relação ao Nível Aventureiro:**
-
-*   Cada pista armazenada na BST será relacionada a um suspeito via tabela hash.
-*   Ao final, o jogador poderá ver qual suspeito está mais associado às pistas e decidir quem é o culpado.
-
-⚙️ **Funcionalidades do Sistema:**
-
-*   Implementar uma tabela hash (array de ponteiros ou lista encadeada).
-*   Função de inserção que relaciona pista → suspeito.
-*   Permitir consulta de todas as pistas relacionadas a cada suspeito.
-*   Mostrar o “suspeito mais citado” ao final da análise.
-
-📥 **Entrada** e 📤 **Saída de Dados:**
-
-*   As pistas e suspeitos são armazenados via `inserirNaHash(pista, suspeito)`.
-*   O programa exibe as associações pista → suspeito.
-*   Exibe o suspeito mais citado com base nas pistas armazenadas.
-
-**Observações:**
-
-*   Pode utilizar hashing simples com função de espalhamento baseada em primeiros caracteres ou soma ASCII.
-*   O ideal é evitar colisões, mas, se ocorrerem, use encadeamento.
-
----
-
-## 🏁 Conclusão
-
-Ao concluir qualquer um dos níveis, você terá desenvolvido um sistema de investigação funcional em C, utilizando estruturas fundamentais como árvores e tabelas hash para controlar lógica de jogo.
-
-Boa sorte, e divirta-se programando com **Detective Quest**!
-
-Equipe de Ensino – Enigma Studios
+Você está na sala:  Jardim
+Esta sala não tem saídas. Você chegou ao fim do caminho!
